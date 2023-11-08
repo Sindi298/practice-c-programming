@@ -19,6 +19,9 @@ int add(int args, ...)
 {
 	va_list list;//define a macro called list
 
+	if (args ==0)
+		return(0);
+
 	va_start(list, args);//takes 2 arguments 1. (list) variable defined above 2. count of arguments variable (args).signifies beginning of list.
 	//all actions take place here
 	int i, sum = 0;//because our function is going to be doing an addition, we want to add some series of arguments, by using a for loop. To use for loop we have to 1.declare the 1st integer datatype, 2.the variable (i) & because we are adding all the viariables 3.we declare (sum)
